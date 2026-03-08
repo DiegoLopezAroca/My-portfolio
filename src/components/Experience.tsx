@@ -33,7 +33,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="py-32 relative">
+    <section id="experience" className="py-20 relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,10 +41,10 @@ export default function Experience() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="flex items-center gap-4 mb-20">
-          <h2 className="text-4xl md:text-5xl font-serif text-zinc-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-serif text-zinc-900 dark:text-zinc-100 tracking-tight">
             Trayectoria
           </h2>
-          <div className="h-px flex-1 bg-zinc-200 mt-2"></div>
+          <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800 mt-2"></div>
         </div>
 
         <div className="space-y-16">
@@ -58,25 +58,25 @@ export default function Experience() {
               className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 group"
             >
               <div className="col-span-1 pt-1">
-                <span className="text-zinc-400 text-sm font-medium tracking-wider uppercase">
+                <span className="text-zinc-400 dark:text-zinc-500 text-sm font-medium tracking-wider uppercase">
                   {exp.period}
                 </span>
               </div>
               <div className="col-span-3">
-                <h3 className="text-2xl font-serif text-zinc-900 mb-2 group-hover:text-purple-700 transition-colors">
+                <h3 className="text-2xl font-serif text-zinc-900 dark:text-zinc-100 mb-2 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">
                   {exp.role}
                 </h3>
-                <h4 className="text-base text-zinc-500 font-medium mb-4">
+                <h4 className="text-base text-zinc-500 dark:text-zinc-400 font-medium mb-4">
                   {exp.company}
                 </h4>
-                <p className="text-zinc-600 leading-relaxed font-light mb-6 max-w-2xl">
+                <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed font-light mb-6 max-w-2xl">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {exp.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full"
+                      className="px-3 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-medium rounded-full"
                     >
                       {tag}
                     </span>
