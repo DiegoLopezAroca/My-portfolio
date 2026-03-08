@@ -1,0 +1,5 @@
+{
+  "name": "Diego López Aroca | Portfolio",
+  "description": "Portafolio Web Interactivo y Asistente de Voz para Diego López Aroca",
+  "requestFramePermissions": ["microphone"]
+}
